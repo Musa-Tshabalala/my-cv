@@ -193,8 +193,12 @@ img {
         width: 100%
     }
 
+    header {
+        width: 100%
+    }
+
     #cert-images {
-        height: 160px;
+        height: 250px;
     }
 
     #prev-button,
