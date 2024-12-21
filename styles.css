@@ -188,7 +188,11 @@ img {
     transition: 0.5s ease-in-out;
 }
 
-@media (max-width) {
+@media (max-width: 425px) {
+    #z-index {
+        width: 100%
+    }
+
     #cert-images {
         height: 160px;
     }
