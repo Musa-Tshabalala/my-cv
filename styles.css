@@ -189,7 +189,7 @@ img {
 }
 
 @media (max-width: 425px) {
-    #z-index {
+    #index {
         width: 100%
     }
 
@@ -199,7 +199,7 @@ img {
 
     #prev-button,
     #next-button {
-        height: 160px;
+        height: 250px;
     }
 
     .fa-solid {
@@ -211,6 +211,6 @@ img {
     }
 
     #project-link {
-        font-size: 25px;
+        font-size: 16px;
     }
 }
