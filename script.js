@@ -90,6 +90,10 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             title: '(D3) GDP Bar Chart',
             url: 'https://musa-tshabalala.github.io/gdp-bar-chart/'
+        },
+        {
+            title: '(D3) Scatter Graph',
+            url: 'https://musa-tshabalala.github.io/scatter-graph/'
         }
     ]
 
