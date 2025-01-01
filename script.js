@@ -94,6 +94,10 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             title: '(D3) Scatter Graph',
             url: 'https://musa-tshabalala.github.io/scatter-graph/'
+        },
+        {
+            title: '(D3) HEAT MAP',
+            url: 'https://musa-tshabalala.github.io/heatmap/'
         }
     ]
 
