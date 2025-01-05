@@ -63,6 +63,12 @@ document.addEventListener('DOMContentLoaded', () => {
             alt: 'FrontEnd Certificate',
             image: 'FrontEnd.jpeg',
             url: 'https://www.freecodecamp.org/certification/Musa_Tshabalala/front-end-development-libraries'
+        },
+        {
+            id: 3,
+            alt: 'Data Vizualization',
+            image: 'Data-Visualization.jpeg',
+            url: 'https://www.freecodecamp.org/certification/Musa_Tshabalala/data-visualization'
         }
     ];
 
