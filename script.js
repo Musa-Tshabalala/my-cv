@@ -74,10 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const myProjects = [
         {
-            title: 'Quote App',
-            url: 'https://musa-tshabalala.github.io/my-quote-app/'
-        },
-        {
             title: 'Markdown Previewer',
             url: 'https://musa-tshabalala.github.io/markdown-previewer/'
         },
@@ -104,6 +100,18 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             title: '(D3) HEAT MAP',
             url: 'https://musa-tshabalala.github.io/heatmap/'
+        },
+        {
+            title: 'Tree Map',
+            url: 'https://musa-tshabalala.github.io/treemap/'
+        },
+        {
+            title: 'Choropleth Map',
+            url: 'https://musa-tshabalala.github.io/choropleth/'
+        },
+        {
+            title: 'TreeMap',
+            url: 'https://musa-tshabalala.github.io/treemap/'
         }
     ]
 
