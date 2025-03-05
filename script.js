@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 5,
             alt: 'Backend and Api\'s',
-            image: 'certicates/Backend.jpeg',
+            image: 'certificates/Backend.jpeg',
             url: 'https://www.freecodecamp.org/certification/Musa_Tshabalala/back-end-development-and-apis'
         }
     ];
