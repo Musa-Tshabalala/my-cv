@@ -49,34 +49,36 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 0,
             alt: 'Web-design Certificate',
-            image: 'responsive-web-design.jpeg',
+            image: 'certificates/responsive-web-design.jpeg',
             url: 'https://www.freecodecamp.org/certification/Musa_Tshabalala/responsive-web-design'
         },
         {
             id: 1,
             alt: 'JavaScript Certificate',
-            image: 'Javascript.jpeg',
+            image: 'certificates/Javascript.jpeg',
             url: 'https://www.freecodecamp.org/certification/Musa_Tshabalala/javascript-algorithms-and-data-structures-v8'
         },
         {
             id: 2,
             alt: 'FrontEnd Certificate',
-            image: 'FrontEnd.jpeg',
+            image: 'certificates/FrontEnd.jpeg',
             url: 'https://www.freecodecamp.org/certification/Musa_Tshabalala/front-end-development-libraries'
         },
         {
             id: 3,
             alt: 'Data Vizualization',
-            image: 'Data-Visualization.jpeg',
+            image: 'certificates/Data-Visualization.jpeg',
             url: 'https://www.freecodecamp.org/certification/Musa_Tshabalala/data-visualization'
+        },
+        {
+            id: 4,
+            alt: 'Relational Databases',
+            image: 'certificates/Relational-Database.jpeg',
+            url: 'https://www.freecodecamp.org/certification/Musa_Tshabalala/relational-database-v8'
         }
     ];
 
     const myProjects = [
-        {
-            title: 'Quote App',
-            url: 'https://musa-tshabalala.github.io/my-quote-app/'
-        },
         {
             title: 'Markdown Previewer',
             url: 'https://musa-tshabalala.github.io/markdown-previewer/'
@@ -104,6 +106,14 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             title: '(D3) HEAT MAP',
             url: 'https://musa-tshabalala.github.io/heatmap/'
+        },
+        {
+            title: 'Tree Map',
+            url: 'https://musa-tshabalala.github.io/treemap/'
+        },
+        {
+            title: 'Choropleth Map',
+            url: 'https://musa-tshabalala.github.io/choropleth/'
         }
     ]
 
