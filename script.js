@@ -49,40 +49,24 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 0,
             alt: 'Web-design Certificate',
-<<<<<<< HEAD
-            image: 'responsive-web-design.jpeg',
-=======
             image: 'certificates/responsive-web-design.jpeg',
->>>>>>> fix/my-projects-array
             url: 'https://www.freecodecamp.org/certification/Musa_Tshabalala/responsive-web-design'
         },
         {
             id: 1,
             alt: 'JavaScript Certificate',
-<<<<<<< HEAD
-            image: 'Javascript.jpeg',
-=======
             image: 'certificates/Javascript.jpeg',
->>>>>>> fix/my-projects-array
             url: 'https://www.freecodecamp.org/certification/Musa_Tshabalala/javascript-algorithms-and-data-structures-v8'
         },
         {
             id: 2,
             alt: 'FrontEnd Certificate',
-<<<<<<< HEAD
-            image: 'FrontEnd.jpeg',
-=======
             image: 'certificates/FrontEnd.jpeg',
->>>>>>> fix/my-projects-array
             url: 'https://www.freecodecamp.org/certification/Musa_Tshabalala/front-end-development-libraries'
         },
         {
             id: 3,
             alt: 'Data Vizualization',
-<<<<<<< HEAD
-            image: 'Data-Visualization.jpeg',
-            url: 'https://www.freecodecamp.org/certification/Musa_Tshabalala/data-visualization'
-=======
             image: 'certificates/Data-Visualization.jpeg',
             url: 'https://www.freecodecamp.org/certification/Musa_Tshabalala/data-visualization'
         },
@@ -91,7 +75,12 @@ document.addEventListener('DOMContentLoaded', () => {
             alt: 'Relational Databases',
             image: 'certificates/Relational-Database.jpeg',
             url: 'https://www.freecodecamp.org/certification/Musa_Tshabalala/relational-database-v8'
->>>>>>> fix/my-projects-array
+        },
+        {
+            id: 5,
+            alt: 'Backend and Api\'s',
+            image: 'certicates/Backend.jpeg',
+            url: 'https://www.freecodecamp.org/certification/Musa_Tshabalala/back-end-development-and-apis'
         }
     ];
 
@@ -131,14 +120,8 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             title: 'Choropleth Map',
             url: 'https://musa-tshabalala.github.io/choropleth/'
-<<<<<<< HEAD
         },
-        {
-            title: 'TreeMap',
-            url: 'https://musa-tshabalala.github.io/treemap/'
-=======
->>>>>>> fix/my-projects-array
-        }
+        
     ]
 
     const displayDetails = () => {
