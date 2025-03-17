@@ -2,32 +2,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const traits = [
         {
-            id: 'Career objectives',
-            details: ['Set to contribute to the achievements of the organisational goal by being part of dynamic group driven by teamwork, professionalism and good business ethics.']
+            id: 'Career Objectives',
+            details: [
+                'Contribute to organizational success through teamwork, professionalism, and ethical business practices.'
+            ]
         },
         {
             id: 'Personal Traits',
             details: [
-                'VERY VERY disciplined.',
-                'High Self-Confidence.',
-                'Result oriented, Open to learn/grow through learning.',
-                'Driven by the ability to CONSTANTLY win just from taking action.',
-                'Good with people.',
-                'Great ability to adapt.',
+                'Highly disciplined and consistent.',
+                'Self-confident and adaptable.',
+                'Results-driven with a strong learning mindset.',
+                'Effective interpersonal and teamwork skills.'
             ]
         },
         {
             id: 'Skills',
             details: [
-                'HTML & CSS',
-                'JavaScript Data Stuctures',
-                'JavaScript Libraries (Bootstrap, jQuery, React, D3 etc)',
-                'API Utilization',
-                'Financial Accounting',
-                'On-field Sales Skills',
-                'Numerical Skills'
+                { category: 'General', items: ['Financial Accounting', 'On-field Sales', 'Numerical Analysis'] },
+                { category: 'Frontend', items: ['HTML & CSS', 'JavaScript (ES6+)', 'Bootstrap, jQuery, React, D3, Redux', 'API Integration'] },
+                { category: 'Backend', items: ['Express.js', 'Database Schema Design', 'Testing (Chai, Mocha)', 'Node.js', 'Bash Scripting', 'Git & CLI'] },
+                { category: 'Databases', items: ['PostgreSQL', 'MySQL', 'MongoDB (Mongoose)'] }
             ]
-        }
+        },
     ];
 
     const schoolsArray = ['Northriding Secondary School', 'DAMELIN College', 'University of Johannesburg'];
@@ -125,22 +122,45 @@ document.addEventListener('DOMContentLoaded', () => {
     ]
 
     const displayDetails = () => {
-        const personalTraits = document.getElementById('personal-traits');
         const schools = document.getElementById('schools');
         const workXp = document.getElementById('work-experience');
 
-        personalTraits.innerHTML = ``;
+        const container = document.getElementById('personal-traits');
 
-        traits.forEach(info => {
-            personalTraits.innerHTML += `
-                <h4 id='${info.id}'>${info.id}</h4>
-                <ul>
-                    ${info.details.map(detail => `<li>${detail}</li>`).join('')}
-                </ul>
-            `
+        traits.forEach(trait => {
+            const section = document.createElement('section');
+            section.innerHTML = `<h2>${trait.id}</h2>`;
+    
+            if (Array.isArray(trait.details)) {
+                const list = document.createElement('ul');
+    
+                trait.details.forEach(detail => {
+                    if (typeof detail === 'string') {
+                        // Handle simple array of strings
+                        const listItem = document.createElement('li');
+                        listItem.textContent = detail;
+                        list.appendChild(listItem);
+                    } else if (typeof detail === 'object' && detail.category) {
+                        // Handle categorized skills
+                        const subHeading = document.createElement('h4');
+                        subHeading.textContent = detail.category;
+                        section.appendChild(subHeading);
+    
+                        const subList = document.createElement('ul');
+                        detail.items.forEach(item => {
+                            const subListItem = document.createElement('li');
+                            subListItem.textContent = item;
+                            subList.appendChild(subListItem);
+                        });
+                        section.appendChild(subList);
+                    }
+                });
+    
+                section.appendChild(list);
+            }
+    
+            container.appendChild(section);
         });
-
-        personalTraits.innerHTML += '<hr>';
 
         schools.innerHTML = `
             <h4>School's Attended</h4>
@@ -183,7 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('prev-button').addEventListener('click', prevButton);
             document.getElementById('next-button').addEventListener('click', nextButton);
         };
-
+    
         const prevButton = () => {
             if (index === 0) return;
             index -= 1;
@@ -195,8 +215,9 @@ document.addEventListener('DOMContentLoaded', () => {
             index += 1
             updateCertificate();
         };
+    
         updateCertificate();
-
+    
         projects.innerHTML += `
             <ul id="project-lists">
                 ${myProjects.map(project => {
@@ -209,7 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </ul>
         `
     };
-    
+        
     displayDetails();
     forCode()
 });
