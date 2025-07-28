@@ -121,6 +121,10 @@ document.addEventListener('DOMContentLoaded', () => {
         
     ]
 
+    const fullstack = [
+        { url: 'https://elites-york.onrender.com/', label: 'e.vee' },
+    ]
+
     const displayDetails = () => {
         const schools = document.getElementById('schools');
         const workXp = document.getElementById('work-experience');
@@ -219,16 +223,32 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCertificate();
     
         projects.innerHTML += `
-            <ul id="project-lists">
+            <ul class="project-lists">
                 ${myProjects.map(project => {
                     return `<li>
-                                <a id=project-link href="${project.url}" target="_blank">
+                                <a class=project-link href="${project.url}" target="_blank">
                                     ${project.title}
                                 </a>
                             </li>`
                 }).join('')}
             </ul>
         `
+
+        const fullstackProjects = document.getElementById('fullstack-projects')
+        const ul = document.createElement('ul')
+        ul.className = 'project-lists'
+        
+        fullstack.forEach(({ url, label }) => {
+            ul.innerHTML = `
+                <li>
+                    <a class='project-link' href="${url}" target="_blank">
+                        ${label}
+                    </a>
+                </li>
+            `
+        })
+
+        fullstackProjects.appendChild(ul)
     };
         
     displayDetails();
