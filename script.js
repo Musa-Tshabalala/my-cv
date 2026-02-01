@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 'Skills',
             details: [
-                { category: 'General', items: ['Financial Accounting', 'On-field Sales', 'Numerical Analysis'] },
+                { category: 'General', items: ['On-field Sales', 'Numerical Analysis'] },
                 { category: 'Frontend', items: ['HTML & CSS', 'JavaScript (ES6+)', 'Bootstrap, jQuery, React, D3, Redux', 'API Integration'] },
-                { category: 'Backend', items: ['Express.js', 'Database Schema Design', 'Testing (Chai, Mocha)', 'Node.js', 'Bash Scripting', 'Git & CLI'] },
+                { category: 'Backend', items: ['Express.js', 'Database Schema Design', 'Testing (Chai, Mocha)', 'Node.js', 'Bash Scripting', 'Git & CLI', 'Automation', 'Networking'] },
                 { category: 'Databases', items: ['PostgreSQL', 'MySQL', 'MongoDB (Mongoose)'] }
             ]
         },
@@ -89,10 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             title: 'Basic Drum Machine',
             url: 'https://musa-tshabalala.github.io/my-drum-machine/'
-        },
-        {
-            title: 'JavaScript Calculator',
-            url: 'https://musa-tshabalala.github.io/my-calculator/'
         },
         {
             title: 'Timer',
@@ -234,7 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </ul>
         `
 
-        const fullstackProjects = document.getElementById('fullstack-projects')
+        /* const fullstackProjects = document.getElementById('fullstack-projects')
         const ul = document.createElement('ul')
         ul.className = 'project-lists'
         
@@ -248,7 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `
         })
 
-        fullstackProjects.appendChild(ul)
+        fullstackProjects.appendChild(ul) */
     };
         
     displayDetails();
